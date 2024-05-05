@@ -17,7 +17,7 @@ function About() {
           >
             <h1 className="text-3xl font-bold mb-4">About the Coding Club</h1>
             <p className="mb-4 ">
-              The Coding Club is a student organization dedicated to teaching
+              This Coding Club is a student organization dedicated to teaching
               students the basics of coding and programming. We offer a variety
               of resources and workshops to help students learn how to code, and
               we also provide opportunities for students to work on coding
@@ -73,11 +73,11 @@ function About() {
           >
             <h2 className="text-3xl font-bold mb-4">Our History</h2>
             <p className="mb-4">
-              The Coding Club was founded in 2010 by a group of students who
+              The Coding Club was founded in 2022 by a group of students who
               were passionate about coding. The club started with just a handful
               of members, but it has grown rapidly over the years. Today, the
-              Coding Club has over 100 members and is one of the most active
-              student organizations on campus.
+              Coding Club has over 20+ active members and is one of the most active
+              student organizations on the campus in the context of learning.
             </p>
 
             <h2 className="text-3xl font-bold mb-4">Our Impact</h2>
