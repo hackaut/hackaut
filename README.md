@@ -1,8 +1,14 @@
-# React + Vite
+# HACKAUT
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Contributions
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- For Contribution, Write a Issue on the Issues Section on whatever Feature you want to develop.
+- You will be assigned as assignee to solve that issue.
+- Create a branch from that issue which will only resolve that particular feature/bug.
+- After you created the branch, Work on the particular branch to solve that issue, you can use ```git fetch origin``` & ```git checkout <branch_name>``` to switch the branch.
+- After Developing the Feature.
+  - ```git add .```
+  - ```git commit -m <commit_msg>```
+  - ```git push```
+- Create a Pull Request to merge that code in main branch. you're done here.
+- A Owner or Maintainer of the group will merge that code if it's clear.
