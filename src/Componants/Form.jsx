@@ -1,9 +1,30 @@
-import React from "react";
-import { FaDisplay, FaEnvelope } from "react-icons/fa6";
-import { FaLocationDot } from "react-icons/fa6";
-import { FaPhone } from "react-icons/fa6";
+import React from 'react';
+import emailjs from 'emailjs-com';
+import { FaLocationDot, FaPhone, FaEnvelope } from 'react-icons/fa6';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Form = () => {
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      'service_2h4yuje',
+      'template_8cy8x69',
+      e.target,
+      'YJOzGM1u15vHwlhDm'
+    )
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+
+    e.target.reset();
+  };
+
+  const notify = () => toast("Your message was sent successfully");
+
   return (
     <div className="bodyc">
       <div className="contacthakaut">
@@ -11,7 +32,6 @@ const Form = () => {
           <div class="content">
             <div class="left-side">
               <div class="address details">
-                {/* <i class="fas fa-map-marker-alt"><FaLocationDot/></i>  */}
                 <i
                   style={{
                     display: "flex",
@@ -37,14 +57,11 @@ const Form = () => {
                 >
                   <FaPhone />
                 </i>
-                {/* <i class="fas fa-phone-alt"><FaPhone/></i>  */}
                 <div class="topic">Phone</div>
-                <div class="text-one">+91 9064364294</div>
-                <div class="text-two">+91 9474798583</div>
+                <div class="text-one">+91 6297244097</div>
+                <div class="text-two">+91 6297172118</div>
               </div>
               <div class="email details">
-                {/* <i class="fas fa-envelope"><FaEnvelope/></i>  */}
-                {/* <i class="fas fa-envelope"><FaEnvelope/></i>  */}
                 <i
                   style={{
                     display: "flex",
@@ -55,11 +72,9 @@ const Form = () => {
                 >
                   <FaEnvelope />
                 </i>
-                {/* code ends */}
                 <div className="icon">{/* <FaEnvelope/> */}</div>
                 <div class="topic">Email</div>
-                <div class="text-one">wecare@gmail.com</div>
-                <div class="text-two">ouremail@gmail.com</div>
+                <div class="text-one">codingclubmakaut2022@gmail.com</div>
               </div>
             </div>
             <div class="right-side">
@@ -69,21 +84,22 @@ const Form = () => {
                 club, feel free to reach out. We're here to assist you, and it's
                 our pleasure to help!
               </p>
-              <form action="#" class="text-center">
+
+              <form onSubmit={sendEmail} class="text-center">
                 <div class="input-box">
-                  <input type="text" placeholder="Enter your name" />
+                  <input type="text" name="name" placeholder="Enter your name" />
                 </div>
                 <div class="input-box">
-                  <input type="text" placeholder="Enter your email" />
+                  <input type="email" name="email" placeholder="Enter your email" />
                 </div>
                 <div class="input-box message-box">
                   <div class="input-box">
-                    <input type="text" placeholder="Enter your query" />
+                    <textarea name="message" placeholder="Enter your query"></textarea>
                   </div>
                 </div>
                 <div class="button bg-blue-600 hover:bg-blue-800 rounded-lg">
-                  {/* <input type="button" value="Send Now"/>  */}
-                  <button type="submit">Send Now</button>
+                  <button type="submit" onClick={notify}>Send Now</button>
+                  <ToastContainer/>
                 </div>
               </form>
             </div>
@@ -95,3 +111,4 @@ const Form = () => {
 };
 
 export default Form;
+

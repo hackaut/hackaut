@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import "./App.css";
 import NavBar2 from "./Componants/navBar2";
+import About from "./Componants/about";
 import { Hero } from "./Componants/hero";
 import Form from "./Componants/Form";
 import Error from "./Componants/Error";
@@ -46,6 +47,16 @@ function App() {
           )}
         </>
       ),
+    },
+    {
+      path:"about",
+      element:(
+        <>
+          <NavBar2 nav={nav} setNav={setNav} />
+          <About/>
+          <Footer2/>
+        </>
+      )
     },
     {
       path: "contact",
