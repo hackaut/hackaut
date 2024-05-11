@@ -75,7 +75,7 @@ const RegForm = () => {
           </label>
           <input
             className="w-full border rounded px-3 py-2 placeholder-gray-500"
-            type="tel"
+            type="number"
             id="contactNo"
             placeholder="Enter your contact number"
             value={contactNo}
@@ -89,7 +89,7 @@ const RegForm = () => {
           </label>
           <input
             className="w-full border rounded px-3 py-2 placeholder-gray-500"
-            type="text"
+            type="number"
             id="registrationNo"
             placeholder="Enter your registration number"
             value={registrationNo}
