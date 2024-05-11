@@ -7,6 +7,8 @@ import {
 } from "react-router-dom";
 import "./App.css";
 import NavBar2 from "./Componants/navBar2";
+import RegForm from "./Componants/reg";
+// import Alumni from "./Componants/Alumni";
 import About from "./Componants/about";
 import { Hero } from "./Componants/hero";
 import Form from "./Componants/Form";
@@ -49,14 +51,24 @@ function App() {
       ),
     },
     {
-      path:"about",
-      element:(
+      path: "about",
+      element: (
         <>
           <NavBar2 nav={nav} setNav={setNav} />
-          <About/>
-          <Footer2/>
+          <About />
+          <Footer2 />
         </>
-      )
+      ),
+    },
+    {
+      path: "reg",
+      element: (
+        <>
+          <NavBar2 nav={nav} setNav={setNav} />
+          <RegForm />
+          <Footer2 />
+        </>
+      ),
     },
     {
       path: "contact",
@@ -83,17 +95,28 @@ function App() {
       element: (
         <>
           <NavBar2 nav={nav} setNav={setNav} />
-          <Teams/>
+          <Teams />
           <Footer2 />
         </>
       ),
     },
+    // {.
+
+    //   path: "alumni",
+    //   element: (
+    //     <>
+    //       <NavBar2 nav={nav} setNav={setNav} />
+    //       <Alumni />
+    //       <Footer2 />
+    //     </>
+    //   ),
+    // },
     {
       path: "gallery",
       element: (
         <>
           <NavBar2 nav={nav} setNav={setNav} />
-          <Gallery/>
+          <Gallery />
           <Footer2 />
         </>
       ),
