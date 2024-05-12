@@ -49,17 +49,7 @@ export const Hero = () => {
         </div>
       </div>
       </div> */}
-      <div class="w-full   z-10">
-  <div class="bg-blue-600 bg-[url('https://preline.co/assets/svg/examples/abstract-1.svg')] bg-no-repeat bg-cover bg-center p-2  text-center">
-    <p class="me-5 inline-block text-white">
-    Join our coding contest, CodeXcellence, to showcase your coding skills.
-    </p>
-    <a class="py-1 px-2 inline-flex items-center gap-x-2 text-sm font-semibold rounded-full border-2 border-white text-white hover:border-white/70 hover:text-white/70 disabled:opacity-50 disabled:pointer-events-none" href="/reg">
-    Register Now
-      <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-    </a>
-  </div>
-  </div>
+      
       <div className="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
         <svg
           className="absolute left-0 hidden h-full text-blue-100 transform -translate-x-1/2 lg:block"
