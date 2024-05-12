@@ -9,10 +9,26 @@ const RegForm = () => {
   const [year, setYear] = useState("");
   const [hasLaptop, setHasLaptop] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    //  form submission logic here
-    console.log("Form submitted!");
+    const r = await fetch(
+      "https://codexcellence-1-z8231528.deta.app/api/user",
+      {
+        method: "POST",
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          contectNo: String(contactNo),
+          registrationNo: String(registrationNo),
+          department: department,
+          year: year,
+          hasLaptop: hasLaptop,
+        }),
+      }
+    );
+    if (r.status === 200) {
+      window.location = "/reg";
+    }
   };
 
   return (
@@ -38,7 +54,7 @@ const RegForm = () => {
           If anyone tries to cheat during the contest, he/she will be
           terminated.
         </li>
-        <li>Last date to registration 12th April.</li>
+        <li>Last date to registration 19th May.</li>
       </ol>
       <form onSubmit={handleSubmit}>
         <div className="mb-4 ">
@@ -125,13 +141,14 @@ const RegForm = () => {
               onChange={() => setYear("firstYear")}
               required
             />
-            First Year
+            First Year (UG)
           </label>
           <label className="inline-block">
             <input
               type="radio"
               className="mr-2"
               name="year"
+              id="year"
               value="others"
               checked={year === "others"}
               onChange={() => setYear("others")}
@@ -147,6 +164,7 @@ const RegForm = () => {
               type="radio"
               className="mr-2"
               name="hasLaptop"
+              id="hasLaptop"
               value="yes"
               checked={hasLaptop === "yes"}
               onChange={() => setHasLaptop("yes")}
@@ -159,6 +177,7 @@ const RegForm = () => {
               type="radio"
               className="mr-2"
               name="hasLaptop"
+              id="hasLaptop"
               value="no"
               checked={hasLaptop === "no"}
               onChange={() => setHasLaptop("no")}
