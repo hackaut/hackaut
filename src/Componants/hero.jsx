@@ -4,62 +4,57 @@ import Picture from "../assets/341099819_244778971259675_7302734960212248906_n.j
 export const Hero = () => {
   return (
     <div className="relative flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0 bg-gradient-to-r from-blue-50 text-blue-100 border-b-8 border-blue-400">
-      {/* <div class="w-full h-10 relative overflow-hidden mt-3 ">
-      <style>
-        {`
-        @keyframes moveLine {
+      <div class="w-full   z-10">
+        <div class="bg-blue-600 bg-[url('https://preline.co/assets/svg/examples/abstract-1.svg')] bg-no-repeat bg-cover bg-center p-2  text-center">
+          <span
+            className="text-white font-bold text-xl mr-7 animate-blink-red"
+            style={{
+              animation: "blink-red 1s infinite",
+              color: "#FF0000",
+              textShadow:
+                "0 0 10px #FF0000, 0 0 20px #FF0000, 0 0 40px #FF0000, 0 0 80px #FF0000, 0 0 120px #FF0000, 0 0 150px #FF0000",
+            }}
+          >
+            New
+          </span>
+          <p class="me-5 inline-block font-bold text-lg text-white ">
+            Join our coding contest, CodeXcellence, to showcase your coding
+            skills.
+          </p>
+          <a
+            class="py-1 px-2 inline-flex items-center gap-x-2 font-bold rounded-full border-2 border-white text-white hover:border-white/70 hover:text-white/70 disabled:opacity-50 disabled:pointer-events-none"
+            href="/reg"
+          >
+            Register Now
+            <svg
+              class="flex-shrink-0 size-4"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="m9 18 6-6-6-6" />
+            </svg>
+          </a>
+        </div>
+        <style>{`
+        @keyframes blink-red {
           0% {
-            left: 0%;
-          }
-          100% {
-            left: 44%;
-          }
-        }
-
-        .animate-line {
-          // animation: moveLine 5s linear infinite alternate;
-        }
-        `}
-      </style>
-      <div class="h-full absolute top-0 bg-transparent animate-line">
-       <div className="overflow-hidden relative z-10 flex justify-center items-center ">
-          <style>
-            {`
-        @keyframes gradient {
-          0%, 100% {
-            background-position: 100% 0%;
+            color: #FF0000;
+            text-shadow: 0 0 10px #FF0000, 0 0 20px #FF0000, 0 0 40px #FF0000, 0 0 80px #FF0000, 0 0 120px #FF0000, 0 0 150px #FF0000;
           }
           50% {
-            background-position: 0% 100%;
+            color: #FFFFFF;
+            text-shadow: none;
           }
         }
-
-        .animate-gradient {
-          // background-image:linear-gradient(to right, #ff0000 0%, #800080 25%, #0000ff 50%, #008000 75%, #ff0000 100%);
-          background-size: 500% auto;
-          // animation: gradient 3s linear infinite;
-        }
-        `}
-          </style>
-          <div className="flex space-x-8 ">
-            <div className="flex items-center space-x-2 ">
-              <span className="text-xl font-bold animate-gradient p-2 text-red"><a href="/reg">  Join our coding contest, CodeXcellence, to showcase your coding skills. Register Soon ! </a></span>
-            </div>
-          </div>
-        </div>
+      `}</style>
       </div>
-      </div> */}
-      <div class="w-full   z-10">
-  <div class="bg-blue-600 bg-[url('https://preline.co/assets/svg/examples/abstract-1.svg')] bg-no-repeat bg-cover bg-center p-2  text-center">
-    <p class="me-5 inline-block text-white">
-    Join our coding contest, CodeXcellence, to showcase your coding skills.
-    </p>
-    <a class="py-1 px-2 inline-flex items-center gap-x-2 text-sm font-semibold rounded-full border-2 border-white text-white hover:border-white/70 hover:text-white/70 disabled:opacity-50 disabled:pointer-events-none" href="/reg">
-    Register Now
-      <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-    </a>
-  </div>
-  </div>
       <div className="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
         <svg
           className="absolute left-0 hidden h-full text-blue-100 transform -translate-x-1/2 lg:block"
