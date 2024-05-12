@@ -4,58 +4,6 @@ import Picture from "../assets/341099819_244778971259675_7302734960212248906_n.j
 export const Hero = () => {
   return (
     <div className="relative flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0 bg-gradient-to-r from-blue-50 text-blue-100 border-b-8 border-blue-400">
-      <div class="w-full   z-10">
-        <div class="bg-blue-600 bg-[url('https://preline.co/assets/svg/examples/abstract-1.svg')] bg-no-repeat bg-cover bg-center p-2  text-center">
-          <span
-            className="text-white font-bold text-xl mr-7 animate-blink-red"
-            style={{
-              animation: "blink-red 1s infinite",
-              color: "#FF0000",
-              textShadow:
-                "0 0 10px #FF0000, 0 0 20px #FF0000, 0 0 40px #FF0000, 0 0 80px #FF0000, 0 0 120px #FF0000, 0 0 150px #FF0000",
-            }}
-          >
-            New
-          </span>
-          <p class="me-5 inline-block font-bold text-lg text-white ">
-            Join our coding contest, CodeXcellence, to showcase your coding
-            skills.
-          </p>
-          <a
-            class="py-1 px-2 inline-flex items-center gap-x-2 font-bold rounded-full border-2 border-white text-white hover:border-white/70 hover:text-white/70 disabled:opacity-50 disabled:pointer-events-none"
-            href="/reg"
-          >
-            Register Now
-            <svg
-              class="flex-shrink-0 size-4"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="m9 18 6-6-6-6" />
-            </svg>
-          </a>
-        </div>
-        <style>{`
-        @keyframes blink-red {
-          0% {
-            color: #FF0000;
-            text-shadow: 0 0 10px #FF0000, 0 0 20px #FF0000, 0 0 40px #FF0000, 0 0 80px #FF0000, 0 0 120px #FF0000, 0 0 150px #FF0000;
-          }
-          50% {
-            color: #FFFFFF;
-            text-shadow: none;
-          }
-        }
-      `}</style>
-      </div>
-      </div> */}
       <div className="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
         <svg
           className="absolute left-0 hidden h-full text-blue-100 transform -translate-x-1/2 lg:block"
