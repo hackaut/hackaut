@@ -20,6 +20,7 @@ import Footer2 from "./Componants/Footer2";
 import Loader from "./Componants/Loader/Loader";
 import { Teams } from "./Componants/Teams/Teams";
 import { Gallery } from "./Componants/Gallery/Gallery";
+import { Notice } from "./Componants/Notice";
 
 function App() {
   const [nav, setNav] = useState(false);
@@ -40,7 +41,10 @@ function App() {
             <Loader />
           ) : (
             <>
-              <NavBar2 nav={nav} setNav={setNav} />
+              <div className="sticky top-0 z-50">
+                <NavBar2 nav={nav} setNav={setNav} />
+                <Notice />
+              </div>
               <Hero />
               <Feature />
               <HomeContent />
