@@ -8,7 +8,7 @@ import {
 import "./App.css";
 import NavBar2 from "./Componants/navBar2";
 import RegForm from "./Componants/reg";
-// import Alumni from "./Componants/Alumni";
+import { Alumni } from "./Componants/alumni/alumni";
 import About from "./Componants/about";
 import { Hero } from "./Componants/hero";
 import Form from "./Componants/Form";
@@ -100,17 +100,17 @@ function App() {
         </>
       ),
     },
-    // {.
+    {
 
-    //   path: "alumni",
-    //   element: (
-    //     <>
-    //       <NavBar2 nav={nav} setNav={setNav} />
-    //       <Alumni />
-    //       <Footer2 />
-    //     </>
-    //   ),
-    // },
+      path: "alumni",
+      element: (
+        <>
+          <NavBar2 nav={nav} setNav={setNav} />
+          <Alumni />
+          <Footer2 />
+        </>
+      ),
+    },
     {
       path: "gallery",
       element: (
