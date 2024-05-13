@@ -2,7 +2,7 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { IoPerson } from "react-icons/io5";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import 'react-lazy-load-image-component/src/effects/blur.css';
-
+import { teamDetails } from "./teamDetails";
 import image from "../../assets/person.webp";
 
 export const TeamCard = (props) => {
@@ -15,7 +15,7 @@ export const TeamCard = (props) => {
           height={160}
           width={160}
           effect="blur"
-          src={image}
+          src={props.images}
           
         />
         {/* <img
@@ -35,13 +35,13 @@ export const TeamCard = (props) => {
             <IoPerson size={20}></IoPerson>
           </a>
           <a
-            href="/"
+            href={props.github}
             className="text-gray-600 transition-colors duration-300 hover:text-black"
           >
             <FaGithub size={20}></FaGithub>
           </a>
           <a
-            href="/"
+            href= {props.linkedIn}
             className="text-gray-600 transition-colors duration-300 hover:text-blue-400"
           >
             <FaLinkedin size={20}></FaLinkedin>
