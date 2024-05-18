@@ -2,6 +2,9 @@ v: 0
 micros:
   - name: backend
     src: ./
-    engine: react
+    engine: static
     primary: true
     public: true
+    commands:
+      - npm run build
+    serve: dist
