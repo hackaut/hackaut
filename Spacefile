@@ -1,0 +1,7 @@
+v: 0
+micros:
+  - name: backend
+    src: ./
+    engine: react
+    primary: true
+    public: true
