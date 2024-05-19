@@ -8,7 +8,7 @@ import {
 import "./App.css";
 import NavBar2 from "./Componants/navBar2";
 import RegForm from "./Componants/reg";
-import { Alumni } from "./Componants/alumni/alumni";
+import Alumni from "./Componants/alumni/Alumni"
 import About from "./Componants/about";
 import { Hero } from "./Componants/hero";
 import Form from "./Componants/Form";
