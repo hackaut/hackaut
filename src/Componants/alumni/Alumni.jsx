@@ -1,6 +1,7 @@
-import { AlumniCard } from "./alumniCard";
+import { AlumniCard } from "./AlumniCard";
 import { alumniDetails } from "./alumniDetails";
-export const Alumni = () => {
+
+const Alumni = () => {
   return (
     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 bg-blue-50">
       <div className="mx-auto mb-10 lg:max-w-xl sm:text-center">
@@ -87,3 +88,5 @@ export const Alumni = () => {
     </div>
   );
 };
+
+export default Alumni;
