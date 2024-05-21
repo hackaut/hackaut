@@ -14,4 +14,4 @@
 - A Owner or Maintainer of the group will merge that code if it's clear.
 - Always pull from the main branch and switch to your branch while starting to resolve issues.
 
-Good Luck!
+Good Luck.
