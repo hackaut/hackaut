@@ -39,7 +39,7 @@ export const Hero = () => {
           </p>
           <div className="flex items-center">
             <a
-              href="/"
+              href="/contact"
               className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-400 hover:bg-blue-700 focus:shadow-outline focus:outline-none"
             >
               Join Us
