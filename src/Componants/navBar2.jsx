@@ -36,50 +36,44 @@ const NavBar2 = (props) => {
             }}
           >
             {props.nav ? (
-              <FaTimes size={15}></FaTimes>
+              <FaTimes size={15} />
             ) : (
-              <FaBars size={15}></FaBars>
+              <FaBars size={15} />
             )}
           </button>
         </div>
-        {props.nav && (
-          <div className="w-full md:block md:w-auto" id="navbar-default">
-            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-200 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
-              {links.map((link) => {
-                return (
-                  <li key={link.id} onClick={() => { props.setNav(!props.nav) }}>
-                    <NavLink
-                      to={link.path}
-                      className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-                      aria-current="page"
-                    >
-                      {link.link}
-                    </NavLink>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        )}
-        <div
-          id="navbar-collapse-with-animation"
-          className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block"
-        >
-          <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end md:mt-0 sm:pl-5">
-            {links.map((link) => {
-              return (
-                <NavLink // Use Link instead of <a> and remove smooth and duration attributes
-                  key={link.id}
+        <div className="hidden md:flex items-center justify-between w-auto">
+          <ul className="font-bold flex flex-row space-x-5">
+            {links.map((link) => (
+              <li key={link.id}>
+                <NavLink
                   to={link.path}
-                  className="font-bold text-blue-900 hover:text-blue-400"
+                  className="block py-2 pl-3 pr-4 text-blue-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
                   aria-current="page"
                 >
                   {link.link}
                 </NavLink>
-              );
-            })}
-          </div>
+              </li>
+            ))}
+          </ul>
         </div>
+        {props.nav && (
+          <div className="absolute top-full left-0 w-full md:hidden bg-blue-200">
+            <ul className="font-medium flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-200">
+              {links.map((link) => (
+                <li key={link.id} onClick={() => { props.setNav(!props.nav) }}>
+                  <NavLink
+                    to={link.path}
+                    className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100"
+                    aria-current="page"
+                  >
+                    {link.link}
+                  </NavLink>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </nav>
     </header>
   );
