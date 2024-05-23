@@ -14,7 +14,16 @@ function Footer() {
       <div className="container1 mx-auto px-4">
         <div className="lg:flex lg:text-center justify-center">
           <div className="w-full lg:w-6/12 px-4">
-            <h4 className="text-3xl font-bold text-black">HACKAUT</h4>
+            <div className="logofoot"
+            style={{display: 'flex', justifyContent: 'center', alignItems: 'center',  padding: '15px'}}
+            >
+            <img
+            className="logofooter"
+            src="src/assets/Group 2.png"
+            alt="Logo"
+            style={{ width: '75px', height: 'auto' }}
+          />
+            </div>
             <h5 className="text-lg mt-0 mb-2 text-blue-800">
               In our development community, we focused on brushing up skills,
               team management and various other aspects of professional life .
