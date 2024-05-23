@@ -14,7 +14,7 @@ const links = [
 
 const NavBar2 = (props) => {
   return (
-    <header className="relative flex flex-wrap items-center justify-between w-full bg-blue-200 text-sm py-4 border-b-2 border-blue-700 sticky top-0 z-50">
+    <header className="flex flex-wrap items-center justify-between w-full bg-blue-200 text-sm py-4 border-b-2 border-blue-700 sticky top-0 z-50">
       <nav className="max-w-[85rem] w-full mx-auto px-4 flex items-center justify-between">
         <div className="flex items-center">
           <NavLink to="/" className="flex items-center text-xl font-black gap-2">
@@ -30,7 +30,7 @@ const NavBar2 = (props) => {
         <div className="flex items-center md:hidden">
           <button
             type="button"
-            className="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2.5 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm"
+            className="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm"
             onClick={() => {
               props.setNav(!props.nav);
             }}
@@ -43,19 +43,21 @@ const NavBar2 = (props) => {
           </button>
         </div>
         {props.nav && (
-          <div className="absolute top-full left-0 w-full bg-gray-200 border-t border-gray-100 md:hidden">
+          <div className="w-full md:block md:w-auto" id="navbar-default">
             <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-200 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
-              {links.map((link) => (
-                <li key={link.id} onClick={() => { props.setNav(!props.nav) }}>
-                  <NavLink
-                    to={link.path}
-                    className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-                    aria-current="page"
-                  >
-                    {link.link}
-                  </NavLink>
-                </li>
-              ))}
+              {links.map((link) => {
+                return (
+                  <li key={link.id} onClick={() => { props.setNav(!props.nav) }}>
+                    <NavLink
+                      to={link.path}
+                      className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                      aria-current="page"
+                    >
+                      {link.link}
+                    </NavLink>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         )}
@@ -63,17 +65,19 @@ const NavBar2 = (props) => {
           id="navbar-collapse-with-animation"
           className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block"
         >
-          <div className="flex flex-col gap-2 mt-5 sm:flex-row sm:items-center sm:justify-end md:mt-0 sm:pl-5">
-            {links.map((link) => (
-              <NavLink
-                key={link.id}
-                to={link.path}
-                className="font-bold text-blue-900 hover:text-blue-400"
-                aria-current="page"
-              >
-                {link.link}
-              </NavLink>
-            ))}
+          <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end md:mt-0 sm:pl-5">
+            {links.map((link) => {
+              return (
+                <NavLink // Use Link instead of <a> and remove smooth and duration attributes
+                  key={link.id}
+                  to={link.path}
+                  className="font-bold text-blue-900 hover:text-blue-400"
+                  aria-current="page"
+                >
+                  {link.link}
+                </NavLink>
+              );
+            })}
           </div>
         </div>
       </nav>
