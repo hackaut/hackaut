@@ -58,7 +58,7 @@ const NavBar2 = (props) => {
           </ul>
         </div>
         {props.nav && (
-          <div className="absolute top-full left-0 w-full md:hidden bg-blue-200">
+          <div className="absolute top-full left-0 w-full md:hidden bg-blue-200 px-4 pb-4 border-t-4 border-blue-800">
             <ul className="font-medium flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-200">
               {links.map((link) => (
                 <li key={link.id} onClick={() => { props.setNav(!props.nav) }}>
