@@ -1,8 +1,8 @@
-import React from 'react';
-import emailjs from 'emailjs-com';
-import { FaLocationDot, FaPhone, FaEnvelope } from 'react-icons/fa6';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import React from "react";
+import emailjs from "emailjs-com";
+import { FaLocationDot, FaPhone, FaEnvelope } from "react-icons/fa6";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Form = () => {
   const sendEmail = (e) => {
@@ -18,19 +18,23 @@ const Form = () => {
       return;
     }
 
-    emailjs.sendForm(
-      'service_2h4yuje',
-      'template_8cy8x69',
-      form,
-      'YJOzGM1u15vHwlhDm'
-    )
-      .then((result) => {
-        console.log(result.text);
-        toast.success("Your message was sent successfully");
-      }, (error) => {
-        console.log(error.text);
-        toast.error("An error occurred, please try again");
-      });
+    emailjs
+      .sendForm(
+        "service_2h4yuje",
+        "template_8cy8x69",
+        form,
+        "YJOzGM1u15vHwlhDm"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          toast.success("Your message was sent successfully");
+        },
+        (error) => {
+          console.log(error.text);
+          toast.error("An error occurred, please try again");
+        }
+      );
 
     form.reset();
   };
@@ -38,6 +42,17 @@ const Form = () => {
   return (
     <div className="bodyc">
       <div className="contacthakaut">
+        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+          <div className="mx-auto lg:max-w-xl sm:text-center">
+            <p className="inline-block text-2xl px-3 py-px mb-2 font-extrabold tracking-wider text-black rounded-full uppercase border-black border-solid border ">
+              CONTACT US
+            </p>
+            {/* <p className="text-base text-black font-bold md:text-lg">
+              Our team members bring a wealth of expertise, enthusiasm, and
+              creativity to the Hackaut Coding Club.
+            </p> */}
+          </div>
+        </div>
         <div className="container text-blue-800 border-4 border-blue-400">
           <div className="content">
             <div className="left-side">
@@ -96,14 +111,25 @@ const Form = () => {
 
               <form onSubmit={sendEmail} className="text-center">
                 <div className="input-box">
-                  <input type="text" name="name" placeholder="Enter your name" />
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Enter your name"
+                  />
                 </div>
                 <div className="input-box">
-                  <input type="email" name="email" placeholder="Enter your email" />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email"
+                  />
                 </div>
                 <div className="input-box message-box">
                   <div className="input-box">
-                    <textarea name="message" placeholder="Enter your query"></textarea>
+                    <textarea
+                      name="message"
+                      placeholder="Enter your query"
+                    ></textarea>
                   </div>
                 </div>
                 <div className="button bg-blue-600 hover:bg-blue-800 rounded-lg">
