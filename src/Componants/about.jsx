@@ -4,7 +4,14 @@ import { motion, useInView, useAnimation } from "framer-motion";
 function About() {
   return (
     <div className="flex flex-col items-center justify-center rounded-full bg-blue-50 ">
-      <div className="max-w-7xl mx-auto p-5 grid md:grid-cols-2 md:gap-20 ">
+      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+       <div className="mx-auto lg:max-w-xl sm:text-center">
+      <p className="inline-block text-2xl px-3 py-px mb-2 font-extrabold tracking-wider text-black rounded-full uppercase border-black border-solid border ">
+          ABOUT US
+        </p>
+        </div>
+      
+      <div className="max-w-7xl mx-auto mt-5 grid md:grid-cols-2 md:gap-20 ">
         <div className="col-span-1">
           <motion.div
             variants={{
@@ -109,6 +116,7 @@ function About() {
         the Coding Club. We are here to help you learn to code and to succeed in
         the tech industry.
       </p>
+    </div>
     </div>
   );
 }
