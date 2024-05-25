@@ -47,10 +47,6 @@ const Form = () => {
             <p className="inline-block text-2xl px-3 py-px mb-2 font-extrabold tracking-wider text-black rounded-full uppercase border-black border-solid border ">
               CONTACT US
             </p>
-            {/* <p className="text-base text-black font-bold md:text-lg">
-              Our team members bring a wealth of expertise, enthusiasm, and
-              creativity to the Hackaut Coding Club.
-            </p> */}
           </div>
         </div>
         <div className="container text-blue-800 border-4 border-blue-400">
