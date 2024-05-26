@@ -19,7 +19,7 @@ function Footer() {
             >
             <img
             className="logofooter"
-            src="src/assets/Group 2.png"
+            src="src/assets/Group2.jpg"
             alt="Logo"
             style={{ width: '75px', height: 'auto' }}
           />

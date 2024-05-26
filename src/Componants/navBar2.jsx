@@ -20,7 +20,7 @@ const NavBar2 = (props) => {
           <NavLink to="/" className="flex items-center text-xl font-black gap-2">
             <img
               className="logonav"
-              src="src/assets/Group 2.png"
+              src="src/assets/Group2.jpg"
               alt="Logo"
               style={{ width: '25px', height: 'auto' }}
             />
