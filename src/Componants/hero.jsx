@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Picture from "../assets/341099819_244778971259675_7302734960212248906_n.jpg";
 
 export const Hero = () => {
+  const [showImage, setShowImage] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowImage(true);
+    }, 50); 
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="relative flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0 bg-gradient-to-r from-blue-50 text-blue-100 border-b-8 border-blue-400">
       <div className="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
         <svg
-          className="absolute left-0 hidden h-full text-blue-100 transform -translate-x-1/2 lg:block"
+          className="absolute left-0 hidden h-full text-blue-100 transform -translate-x-1/2 lg:block z-10"
           viewBox="0 0 100 100"
           fill="currentColor"
           preserveAspectRatio="none slice"
@@ -14,7 +24,7 @@ export const Hero = () => {
           <path d="M50 0H100L50 100H0L50 0Z" />
         </svg>
         <img
-          className="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
+          className={`object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full transition-opacity duration-1000 ${showImage ? 'opacity-100' : 'opacity-50'}`}
           src={Picture}
           alt=""
         />

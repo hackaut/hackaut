@@ -207,3 +207,29 @@
 .text-blue-75{
   color : rgb(229,240,255)
 }
+
+/* App.css */
+.transition-opacity {
+  transition: opacity 1s ease-in-out; /* 1 second transition duration */
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
