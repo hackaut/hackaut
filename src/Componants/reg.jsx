@@ -36,6 +36,12 @@ const RegForm = () => {
       <h1 className="text-2xl font-bold text-center mb-4">REGISTRATION FORM</h1>
       <p className="mb-4 font-bold">Rulls for Coding Contest CodeXecelence:</p>
       <ol className="list-decimal ml-6 mb-4">
+        <li>In our coding contest there will be two segements-
+          <ul className="list-disc ml-7">
+          <li>One is for all the UG 1st Year students</li>
+          <li>Another segment is for all other students </li>
+          </ul>
+        </li>
         <li>It will be a 2 hours event.</li>
         <li>Everyone please bring your own laptop with fully charged.</li>
         <li>
