@@ -3,7 +3,6 @@ import { IoPerson } from "react-icons/io5";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import 'react-lazy-load-image-component/src/effects/blur.css';
 // import { teamDetails } from "./teamDetails";
-import image from "../../assets/person.webp";
 
 export const AlumniCard = (props) => {
   return (
