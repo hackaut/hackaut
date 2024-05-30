@@ -29,7 +29,7 @@ export const AlumniCard = (props) => {
         <p className="mb-5 text-xs text-gray-800">{props.role}</p>
         <div className="flex items-center justify-center space-x-3">
           <a
-            href="/"
+            href="#"
             className="text-gray-600 transition-colors duration-300 hover:text-blue-900"
           >
             <IoPerson size={20}></IoPerson>
