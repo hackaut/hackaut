@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import frame from "../assets/frame.png"
 
 const RegForm = () => {
   const [name, setName] = useState("");
@@ -34,24 +35,24 @@ const RegForm = () => {
   return (
     <div className="max-w-3xl mx-auto mt-10 border rounded-lg shadow-xl mb-10 bg-gray-100">
       <img 
-        src="/src/assets/poster.png" 
+        src={frame}
         alt="HackAUT Banner" 
         className="w-full h-auto mb-4 border rounded-lg shadow-xl "
       />
       <div className=" p-5">
       <h1 className="text-2xl font-bold text-center mb-4">REGISTRATION FORM</h1>
-      <p className="mb-4 font-bold">Rules for Coding Contest CodeXecelence:</p>
+      <p className="mb-4 font-bold">Rules for Coding Contest CodeXcellence:</p>
       <ol className="list-decimal ml-6 mb-4">
-        <li>In our coding contest there will be two segements-
+        <li>In our coding contest there will be two segments-
           <ul className="list-disc ml-7">
-          <li>One is for all the UG 1st Year students, which will be in the ofline mode.</li>
-          <li>Another segment is for all other students, which eill be in the online mode.</li>
+          <li>One is for all the UG 1st Year students, which will be in the offline mode.</li>
+          <li>Another segment is for all other students, which will be in the online mode.</li>
           </ul>
         </li>
         <li>It will be a 100 minutes event.</li>
         <li>Everyone please bring your own laptop with fully charged.</li>
         <li>
-          If anyone doesn't have their own laptop, some lab room will be
+          If anyone doesn't have their own laptop, some lab rooms will be
           allocated for them.
         </li>
         <li>
@@ -59,14 +60,14 @@ const RegForm = () => {
           them in the MAR activity.
         </li>
         <li>
-          First, Second, and Third rank holder will get some amazing gifts.
+          First, Second, and Third rank holders will get some amazing gifts.
         </li>
         <li>Every participant will get a tiffin.</li>
         <li>
           If anyone tries to cheat during the contest, he/she will be
           terminated.
         </li>
-        <li>Last date to registration 9th June.</li>
+        <li>Last date for registration : 9th June.</li>
       </ol>
       <form onSubmit={handleSubmit}>
         <div className="mb-4 ">
