@@ -7,6 +7,7 @@ import {
   FaGithub,
 } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 function Footer() {
   return (
@@ -19,9 +20,9 @@ function Footer() {
             >
             <img
             className="logofooter"
-            src="src/assets/Group2.jpg"
+            src={logo}
             alt="Logo"
-            style={{ width: '75px', height: 'auto' }}
+            style={{ width: '100px', height: 'auto' }}
           />
             </div>
             <h5 className="text-lg mt-0 mb-2 text-blue-800">

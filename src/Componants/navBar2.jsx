@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
+import logo from "../assets/logo.png";
 
 const links = [
   { id: 1, link: "Home", path: "/" },
@@ -20,9 +21,9 @@ const NavBar2 = (props) => {
           <NavLink to="/" className="flex items-center text-xl font-black gap-2">
             <img
               className="logonav"
-              src="src/assets/Group2.jpg"
+              src={logo}
               alt="Logo"
-              style={{ width: '25px', height: 'auto' }}
+              style={{ width: '30px', height: 'auto' }}
             />
             <h2>HACKAUT</h2>
           </NavLink>

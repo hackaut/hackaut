@@ -42,7 +42,7 @@ const Form = () => {
   return (
     <div className="bodyc">
       <div className="contacthakaut">
-        <div className="px-4 pt-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
+        <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-20">
           <div className="mx-auto lg:max-w-xl sm:text-center">
             <p className="inline-block text-2xl px-3 py-px mb-2 font-extrabold tracking-wider text-black rounded-full uppercase border-black border-solid border ">
               CONTACT US
