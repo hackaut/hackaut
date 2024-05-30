@@ -40,16 +40,16 @@ const Form = () => {
   };
 
   return (
-    <div className="bodyc ">
+    <div className="bodyc">
       <div className="contacthakaut">
-        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div className="px-4 pt-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
           <div className="mx-auto lg:max-w-xl sm:text-center">
             <p className="inline-block text-2xl px-3 py-px mb-2 font-extrabold tracking-wider text-black rounded-full uppercase border-black border-solid border ">
               CONTACT US
             </p>
           </div>
         </div>
-        <div className="container text-blue-800 border-4 border-blue-400">
+        <div className="container text-blue-800 border-4 border-blue-400 sm:p-16 pt-4 px-6 mt-10">
           <div className="content">
             <div className="left-side">
               <div className="address details">
