@@ -19,8 +19,8 @@ export const Teams = () => {
           Founders
         </p>
         <div className="flex flex-wrap gap-16 justify-center mb-10">
-          <TeamCard name="Joy Sarkar" role="Hackaut Lead" />
-          <TeamCard name="Dilip Sarkar" role="Hackaut Co-Lead" />
+          <TeamCard name="Joy Sarkar" role="President" images={teamDetails.joySarkar.image} github={teamDetails.joySarkar.github} linkedIn={teamDetails.joySarkar.linkedin}/>
+          <TeamCard name="Dilip Sarkar" role="Hackaut Co-Lead" images={teamDetails.dilipSarkar.image} github={teamDetails.dilipSarkar.github} linkedIn={teamDetails.dilipSarkar.linkedin}/>
         </div>
         <p className="inline-block text-xs px-3 py-px mb-4 font-semibold text-white uppercase rounded-full bg-blue-400 mb-8">
           Sub Ordinates
