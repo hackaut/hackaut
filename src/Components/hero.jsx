@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import Picture from "../assets/341099819_244778971259675_7302734960212248906_n.jpg";
+import { useState, useEffect } from "react";
+import Picture from "../assets/makaut.jpg";
 
 export const Hero = () => {
   const [showImage, setShowImage] = useState(false);
@@ -43,7 +43,7 @@ export const Hero = () => {
             </span>
           </h2>
           <p className="pr-5 mb-5 text-base text-gray-900 md:text-lg">
-            MAKAUT's premier tech club, HACKAUT, cultivates innovation, fosters
+            MAKAUT&apos;s premier tech club, HACKAUT, cultivates innovation, fosters
             skill development, and encourages collaboration, creating a vibrant
             community of tech enthusiasts. Join us Today.
           </p>

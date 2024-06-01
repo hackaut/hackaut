@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import frame from "../assets/frame.png"
 
 const RegForm = () => {
@@ -13,7 +13,7 @@ const RegForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const r = await fetch(
-      "https://codexcellence-1-z8231528.deta.app/api/user",
+      "https://api.hackaut.club/cx/register",
       {
         method: "POST",
         body: JSON.stringify({
@@ -24,11 +24,19 @@ const RegForm = () => {
           department: department,
           year: year,
           hasLaptop: hasLaptop,
+          verified: false,
+          verification_secret: crypto.randomUUID(),
         }),
       }
     );
-    if (r.status === 200) {
+    if (r.status === 201) {
+      alert("Please check your email to verify your registration!");
       window.location = "/reg";
+    } else if (r.status === 409) {
+      alert(`User already registered with registration number ${registrationNo}!`);
+    }
+    else {
+      alert("Something went wrong! Please try again later.");
     }
   };
 
@@ -52,7 +60,7 @@ const RegForm = () => {
         <li>It will be a 100 minutes event.</li>
         <li>Everyone please bring your own laptop with fully charged.</li>
         <li>
-          If anyone doesn't have their own laptop, some lab rooms will be
+          If anyone doesn&apos;t have their own laptop, some lab rooms will be
           allocated for them.
         </li>
         <li>

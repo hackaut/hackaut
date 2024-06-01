@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 
 const HomeContent = () => {
   return (
@@ -17,7 +17,7 @@ const HomeContent = () => {
               With a dedicated team of experts and a commitment to excellence,
               we offer cutting-edge solutions in cybersecurity, software
               development, and IT consulting. We believe that knowledge should
-              be shared, and that's why we provide valuable resources and
+              be shared, and that&apos;s why we provide valuable resources and
               training to help you stay ahead in this fast-paced world. Join us
               on our journey to explore the limitless possibilities of
               technology.

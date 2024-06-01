@@ -1,12 +1,12 @@
-import React from "react";
+// import React from "react";
 import {
   FaLinkedin,
-  FaLinkedinIn,
+  // FaLinkedinIn,
   FaFacebook,
   FaInstagram,
   FaGithub,
 } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.png";
 
 function Footer() {

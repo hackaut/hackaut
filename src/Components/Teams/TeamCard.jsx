@@ -1,8 +1,8 @@
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoPerson } from "react-icons/io5";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import { teamDetails } from "./teamDetails";
+// import { teamDetails } from "./teamDetails";
 
 export const TeamCard = (props) => {
   return (
@@ -15,7 +15,6 @@ export const TeamCard = (props) => {
           width={160}
           effect="blur"
           src={props.images}
-          
         />
         {/* <img
           className="absolute object-cover w-full h-full rounded-[50%]"

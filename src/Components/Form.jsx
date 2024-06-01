@@ -1,5 +1,3 @@
-import React from "react";
-import emailjs from "emailjs-com";
 import { FaLocationDot, FaPhone, FaEnvelope } from "react-icons/fa6";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -18,25 +16,8 @@ const Form = () => {
       return;
     }
 
-    emailjs
-      .sendForm(
-        "service_2h4yuje",
-        "template_8cy8x69",
-        form,
-        "YJOzGM1u15vHwlhDm"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          toast.success("Your message was sent successfully");
-        },
-        (error) => {
-          console.log(error.text);
-          toast.error("An error occurred, please try again");
-        }
-      );
-
-    form.reset();
+    // TODO: Implement email sending logic here using new backend logic
+    
   };
 
   return (
@@ -94,14 +75,14 @@ const Form = () => {
                   <FaEnvelope />
                 </i>
                 <div className="topic">Email</div>
-                <div className="text-one">codingclubmakaut2022@gmail.com</div>
+                <div className="text-one">contact@hackaut.club</div>
               </div>
             </div>
             <div className="right-side">
               <div className="topic-text">Send us a message</div>
               <p>
                 If you have any coding projects or queries related to our coding
-                club, feel free to reach out. We're here to assist you, and it's
+                club, feel free to reach out. We&apos;re here to assist you, and it&apos;s
                 our pleasure to help!
               </p>
 

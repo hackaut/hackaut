@@ -1,5 +1,5 @@
 import { HashLoader } from "react-spinners";
-import React from "react";
+// import React from "react";
 
 import { LoaderContent } from "./LoaderContent";
 

@@ -1,5 +1,5 @@
-import React from "react";
-import { motion, useInView, useAnimation } from "framer-motion";
+// import React from "react";
+import { motion } from "framer-motion";
 
 function About() {
   return (

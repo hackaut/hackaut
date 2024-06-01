@@ -2,25 +2,25 @@ import { useState, useEffect } from "react";
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Link,
+  // Route,
+  // Link,
 } from "react-router-dom";
 import "./App.css";
-import NavBar2 from "./Componants/navBar2";
-import RegForm from "./Componants/reg";
-import Alumni from "./Componants/alumni/Alumni";
-import About from "./Componants/about";
-import { Hero } from "./Componants/hero";
-import Form from "./Componants/Form";
-import Error from "./Componants/Error";
-import HomeContent from "./Componants/HomeContent";
-import { Feature } from "./Componants/features";
-import { Footer } from "./Componants/footer";
-import Footer2 from "./Componants/Footer2";
-import Loader from "./Componants/Loader/Loader";
-import { Teams } from "./Componants/Teams/Teams";
-import { Gallery } from "./Componants/Gallery/Gallery";
-import { Notice } from "./Componants/Notice";
+import NavBar2 from "./Components/navBar2";
+import RegForm from "./Components/reg";
+import Alumni from "./Components/alumni/Alumni";
+import About from "./Components/about";
+import { Hero } from "./Components/hero";
+import Error from "./Components/Error";
+import HomeContent from "./Components/HomeContent";
+import { Feature } from "./Components/features";
+// import { Footer } from "./Components/footer";
+import Footer2 from "./Components/Footer2";
+import Form  from "./Components/Form";
+import Loader from "./Components/Loader/Loader";
+import { Teams } from "./Components/Teams/Teams";
+import { Gallery } from "./Components/Gallery/Gallery";
+import { Notice } from "./Components/Notice";
 
 function App() {
   const [nav, setNav] = useState(false);
