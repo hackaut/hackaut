@@ -19,13 +19,13 @@ const RegForm = () => {
         body: JSON.stringify({
           name: name,
           email: email,
-          contectNo: String(contactNo),
+          contactNo: String(contactNo),
           registrationNo: String(registrationNo),
           department: department,
           year: year,
           hasLaptop: hasLaptop,
           verified: false,
-          verification_secret: crypto.randomUUID(),
+          verificationSecret: crypto.randomUUID(),
         }),
       }
     );
