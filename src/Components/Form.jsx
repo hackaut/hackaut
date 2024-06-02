@@ -15,7 +15,7 @@ const Form = () => {
       toast.error("All fields are required!");
       return;
     }
-    const resp = await fetch("http://api.hackaut.club/query", {
+    const resp = await fetch("https://api.hackaut.club/query", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

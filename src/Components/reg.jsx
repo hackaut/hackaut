@@ -12,9 +12,7 @@ const RegForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const r = await fetch(
-      "https://api.hackaut.club/cx/register",
-      {
+    const r = await fetch("https://api.hackaut.club/cx/register", {
         method: "POST",
         body: JSON.stringify({
           name: name,
