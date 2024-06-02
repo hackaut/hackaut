@@ -3,7 +3,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Form = () => {
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
 
     const form = e.target;
@@ -15,9 +15,25 @@ const Form = () => {
       toast.error("All fields are required!");
       return;
     }
+    const resp = await fetch("http://api.hackaut.club/query", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        content: message,
+      }),
+    });
 
-    // TODO: Implement email sending logic here using new backend logic
-    
+    if (resp.ok) {
+      toast.success("Message sent successfully!");
+      form.reset();
+    } else {
+      toast.error("Failed to send message! Please try again later.");
+    }
+
   };
 
   return (
