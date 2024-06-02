@@ -30,7 +30,13 @@ const RegForm = () => {
     );
     if (r.status === 201) {
       toast.success("Please check your email to verify your registration.");
-      window.location = "/reg";
+      setName("");
+      setEmail("");
+      setContactNo("");
+      setRegistrationNo("");
+      setDepartment("");
+      setYear("");
+      setHasLaptop("");
     } else if (r.status === 409) {
       toast.warning(`Participant (${registrationNo}) already registered.`);
     }
