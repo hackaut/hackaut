@@ -33,7 +33,6 @@ const Form = () => {
     } else {
       toast.error("Failed to send message! Please try again later.");
     }
-
   };
 
   return (

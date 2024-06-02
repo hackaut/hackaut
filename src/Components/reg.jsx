@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
 import frame from "../assets/frame.png"
 
 const RegForm = () => {
@@ -28,13 +29,13 @@ const RegForm = () => {
       }
     );
     if (r.status === 201) {
-      alert("Please check your email to verify your registration!");
+      toast.success("Please check your email to verify your registration.");
       window.location = "/reg";
     } else if (r.status === 409) {
-      alert(`User already registered with registration number ${registrationNo}!`);
+      toast.warning(`Participant (${registrationNo}) already registered.`);
     }
     else {
-      alert("Something went wrong! Please try again later.");
+      toast.error("Something went wrong! Please try again later.");
     }
   };
 
@@ -212,6 +213,7 @@ const RegForm = () => {
           Submit
         </button>
       </form>
+      <ToastContainer />
     </div>
     </div>
   );
