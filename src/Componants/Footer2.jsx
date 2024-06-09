@@ -30,7 +30,7 @@ function Footer() {
               team management and various other aspects of professional life .
             </h5>
             <div className="mt-6 lg:mb-0 mb-6 flex space-x-2 justify-center">
-              <a href="https://www.linkedin.com/company/hackaut-mackaut/">
+              <a href="https://www.linkedin.com/company/hackaut-makaut/about/">
                 <button
                   className="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 flex items-center justify-center align-center rounded-full outline-none focus:outline-none"
                   type="button"
@@ -38,7 +38,7 @@ function Footer() {
                   <FaLinkedin className="fab fa-linkedin w-12 h-12" ></FaLinkedin>
                 </button>
               </a>
-              <a href="https://www.facebook.com/profile.php?id=100092756078107&mibextid=ZbWKwL">
+              <a href="https://www.facebook.com/profile.php?id=61560089193036&mibextid=ZbWKwL">
                 <button
                   className="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 flex items-center justify-center align-center rounded-full outline-none focus:outline-none"
                   type="button"
