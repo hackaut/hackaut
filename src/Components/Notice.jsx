@@ -1,10 +1,14 @@
 // import React from "react";
 import { Link } from "react-router-dom";
+import "./../App.css"
 
 export const Notice = () => {
   return (
     <div className="w-full z-10">
       <div className="bg-blue-600 bg-[url('https://preline.co/assets/svg/examples/abstract-1.svg')] bg-no-repeat bg-cover bg-center p-2  text-center">
+      <span className="blinking font-extrabold mx-2 mr-9">
+         19th June 
+      </span>
         <p className="me-5 inline-block text-white font-extrabold">
           Join our coding contest, CodeXcellence, to showcase your coding
           skills.
