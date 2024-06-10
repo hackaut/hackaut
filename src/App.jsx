@@ -43,7 +43,7 @@ function App() {
             <>
               <div className="sticky top-0 z-50">
                 <NavBar2 nav={nav} setNav={setNav} />
-                {/* <Notice /> */}
+                <Notice />
               </div>
               <Hero />
               <Feature />

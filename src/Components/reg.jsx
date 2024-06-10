@@ -75,12 +75,12 @@ const RegForm = () => {
         <li>
           First, Second, and Third rank holders will get some amazing gifts.
         </li>
-        <li>Every participant will get a tiffin.</li>
+        <li>Every participant will get a tiffin. (for offline)</li>
         <li>
-          If anyone tries to cheat during the contest, he/she will be
+          If anyone tries to cheat during the contest, his/her candidature will be 
           terminated.
         </li>
-        <li>Last date for registration : 9th June.</li>
+        <li>Last date for registration : 18th June.</li>
       </ol>
       <form onSubmit={handleSubmit}>
         <div className="mb-4 ">
