@@ -1,10 +1,5 @@
 import { useState, useEffect } from "react";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  // Route,
-  // Link,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import NavBar2 from "./Components/navBar2";
 import RegForm from "./Components/reg";
@@ -14,13 +9,11 @@ import { Hero } from "./Components/hero";
 import Error from "./Components/Error";
 import HomeContent from "./Components/HomeContent";
 import { Feature } from "./Components/features";
-// import { Footer } from "./Components/footer";
 import Footer2 from "./Components/Footer2";
 import Form  from "./Components/Form";
 import Loader from "./Components/Loader/Loader";
 import { Teams } from "./Components/Teams/Teams";
 import { Gallery } from "./Components/Gallery/Gallery";
-import { Notice } from "./Components/Notice";
 
 function App() {
   const [nav, setNav] = useState(false);
@@ -43,7 +36,6 @@ function App() {
             <>
               <div className="sticky top-0 z-50">
                 <NavBar2 nav={nav} setNav={setNav} />
-                <Notice />
               </div>
               <Hero />
               <Feature />
