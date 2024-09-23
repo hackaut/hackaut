@@ -22,7 +22,8 @@
     "react-scroll": "^1.8.9",
     "react-spinners": "^0.13.8",
     "react-toastify": "^10.0.5",
-    "tw-elements": "^1.0.0-rc.1"
+    "tw-elements": "^1.0.0-rc.1",
+    "vite": "^4.4.9"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
