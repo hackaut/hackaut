@@ -24,8 +24,9 @@ export const TeamCard = (props) => {
       </div>
       <div className="flex flex-col text-center">
         <p className="text-lg font-extrabold">{props.name}</p>
-        <p className="mb-5 text-xs text-gray-800">{props.role}</p>
-        <div className="flex items-center justify-center space-x-3">
+        <p className="text-xs text-gray-800">{props.role}</p>
+        <p className="mb-5 text-xs text-gray-800">{props.stack}</p>
+        {/* <div className="flex items-center justify-center space-x-3">
           <a
             href="/"
             className="text-gray-600 transition-colors duration-300 hover:text-blue-900"
@@ -44,7 +45,7 @@ export const TeamCard = (props) => {
           >
             <FaLinkedin size={20}></FaLinkedin>
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -19,7 +19,7 @@ export const Teams = () => {
           Founders
         </p>
         <div className="flex flex-wrap gap-16 justify-center mb-10">
-          <TeamCard name={teamDetails.Achintya.name} role="subordinate" images={teamDetails.Achintya.image} github={teamDetails.Achintya.github} linkedIn={teamDetails.Achintya.linkedin}/>
+          <TeamCard name={teamDetails.Achintya.name} role="General Secretary" stack="Java, Kotlin, Flutter" images={teamDetails.Achintya.image}/>
         </div>
       </div>
     </div>
