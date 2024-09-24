@@ -6,13 +6,13 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 
 export const TeamCard = (props) => {
   return (
-    <div className="w-40">
-      <div className="relative w-40 h-40 mb-4 rounded-[50%] shadow">
+    <div className="w-48">
+      <div className="relative w-48 h-48 mb-4 rounded-[50%] shadow ">
         <LazyLoadImage
           alt="person"
-          className="absolute object-cover w-full h-full rounded-[50%]"
-          height={160}
-          width={160}
+          className="absolute object-cover w-full h-full rounded-[50%] border-blue-500 border-4"
+          height={192}
+          width={192}
           effect="blur"
           src={props.images}
         />

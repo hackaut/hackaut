@@ -19,22 +19,7 @@ export const Teams = () => {
           Founders
         </p>
         <div className="flex flex-wrap gap-16 justify-center mb-10">
-          <TeamCard name="Joy Sarkar" role="President" images={teamDetails.joySarkar.image} github={teamDetails.joySarkar.github} linkedIn={teamDetails.joySarkar.linkedin}/>
-          <TeamCard name="Dilip Sarkar" role="Hackaut Co-Lead" images={teamDetails.dilipSarkar.image} github={teamDetails.dilipSarkar.github} linkedIn={teamDetails.dilipSarkar.linkedin}/>
-        </div>
-        <p className="inline-block text-xs px-3 py-px font-semibold text-white uppercase rounded-full bg-blue-400 mb-8">
-          Sub Ordinates
-        </p>
-        <div className="flex flex-wrap gap-16 justify-center mb-10">
-          <TeamCard name={teamDetails.shreyoPaul.name} role="subordinate" images={teamDetails.shreyoPaul.image} github={teamDetails.shreyoPaul.github} linkedIn={teamDetails.shreyoPaul.linkedin}/>
-          <TeamCard name={teamDetails.AyanPatra.name} role="subordinate" images={teamDetails.AyanPatra.image} github={teamDetails.AyanPatra.github} linkedIn={teamDetails.AyanPatra.linkedin}/>
-          <TeamCard name={teamDetails.joyjit.name} role="subordinate" images={teamDetails.joyjit.image} github={teamDetails.joyjit.github} linkedIn={teamDetails.joyjit.linkedin}/>
-          
-        </div>
-        <div className="flex flex-wrap gap-16 justify-center mb-10">
-        <TeamCard name={teamDetails.mohitRaj.name} role="subordinate" images={teamDetails.mohitRaj.image} github={teamDetails.mohitRaj.github} linkedIn={teamDetails.mohitRaj.linkedin}/>
-        <TeamCard name={teamDetails.snehasis.name} role="subordinate" images={teamDetails.snehasis.image} github={teamDetails.snehasis.github} linkedIn={teamDetails.snehasis.linkedin}/>
-        <TeamCard name={teamDetails.subhadip.name} role="subordinate" images={teamDetails.subhadip.image} github={teamDetails.subhadip.github} linkedIn={teamDetails.subhadip.linkedin}/>
+          <TeamCard name={teamDetails.Achintya.name} role="subordinate" images={teamDetails.Achintya.image} github={teamDetails.Achintya.github} linkedIn={teamDetails.Achintya.linkedin}/>
         </div>
       </div>
     </div>
