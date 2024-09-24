@@ -20,7 +20,7 @@ export const Teams = () => {
         </p>
         <div className="flex flex-wrap gap-16 justify-center mb-10">
           <TeamCard name={teamDetails.SaikatBasu.name} role="Principal Advisor (HOD of CSE)" stack="ML, IOT, Cryptography" images={teamDetails.SaikatBasu.image}/>
-          <TeamCard name={teamDetails.JoySamadder.name} role="Chairman" stack="IOT, Web Technology" images={teamDetails.JoySamadder.image}/>
+          <TeamCard name={teamDetails.JoySamadder.name} role="Chairman" stack="IoT, Full Stack Development, Web Analytics, Cybersecurity" images={teamDetails.JoySamadder.image}/>
         </div>
         <p className="inline-block text-xs px-3 py-px font-semibold text-white uppercase rounded-full bg-blue-400 mb-8">
           Leaders
@@ -36,7 +36,7 @@ export const Teams = () => {
         </p>
         <div className="flex flex-wrap gap-16 justify-center mb-10">
           <TeamCard name={teamDetails.Anish.name} role="Director of Management" stack="C++, AI, CS Fundamentals" images={teamDetails.Anish.image}/>
-          <TeamCard name={teamDetails.Debashis.name} role="Treasurer" stack="C++, Python, CS Fundamentals" images={teamDetails.Debashis.image}/>
+          <TeamCard name={teamDetails.Debashis.name} role="Treasurer" stack="C++, Python, React, CS Fundamentals" images={teamDetails.Debashis.image}/>
           <TeamCard name={teamDetails.Supriya.name} role="Accountant" stack="JavaScript, CS Fundamentals" images={teamDetails.Supriya.image}/>
           <TeamCard name={teamDetails.Mayank.name} role="Technical Director (CP)" stack="AI/ML(Representative), C++" images={teamDetails.Mayank.image}/>
         </div>
