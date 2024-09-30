@@ -14,6 +14,7 @@ import Form  from "./Components/Form";
 import Loader from "./Components/Loader/Loader";
 import { Teams } from "./Components/Teams/Teams";
 import { Gallery } from "./Components/Gallery/Gallery";
+import Resources from "./Components/resources/Resources";
 
 function App() {
   const [nav, setNav] = useState(false);
@@ -72,6 +73,16 @@ function App() {
         <>
           <NavBar2 nav={nav} setNav={setNav} />
           <Form />
+          <Footer2 />
+        </>
+      ),
+    },
+    {
+      path: "resources",
+      element: (
+        <>
+          <NavBar2 nav={nav} setNav={setNav} />
+          <Resources/>
           <Footer2 />
         </>
       ),
