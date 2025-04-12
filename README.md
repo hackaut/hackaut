@@ -66,6 +66,7 @@ Meet the people actively maintaining this project:
 | Arnab Pal         | [@arnabpal2022](http://github.com/arnabpal2022)       | Maintainer  | [LinkedIn](https://www.linkedin.com/in/arnab-pal-90946b244/)         |
 | Debashis Bera     | [@Debashis Bera](https://github.com/Debashis7307)     | Maintainer  | [LinkedIn](https://www.linkedin.com/in/debashisalak2003/)            |
 | Ritochit Ghosh    | [@RitochitGhosh](https://github.com/RitochitGhosh)    | Maintainer  | [LinkedIn](https://www.linkedin.com/in/ritochit-ghosh-3861372a0/)    |
+| Aritra Ray        | [@rayAritra](https://github.com/rayAritra)            | Maintainer  | [LinkedIn](https://www.linkedin.com/in/aritra-ray-236681293/)        |
 
 > Feel free to reach out to any of us if you have questions, suggestions, or want to contribute.
 
